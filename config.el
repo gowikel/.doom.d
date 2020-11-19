@@ -33,6 +33,9 @@
       display-line-numbers t
       js-indent-level 4)
 
+;; On Mac OS you will need to install pinentry-mac
+;; This will ask for your password when you try to sign with your GPG key
 (pinentry-start)
 
+;; JS2 rocks, but as I am using React, by default I prefer to enable rjsx-mode.
 (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
