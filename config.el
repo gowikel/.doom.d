@@ -46,5 +46,13 @@
       "c l" #'comment-line)
 
 (map! :leader
-      :desc "Search references"
+      :desc "Code references"
+      "c r" #'+lookup/references)
+
+(map! :leader
+      :desc "Code definition"
+      "c d" #'+lookup/definition)
+
+(map! :leader
+      :desc "Goto references"
       "g r" #'+lookup/references)
