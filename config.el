@@ -44,3 +44,7 @@
 (map! :leader
       :desc "Comment line"
       "c l" #'comment-line)
+
+(map! :leader
+      :desc "Search references"
+      "g r" #'+lookup/references)
