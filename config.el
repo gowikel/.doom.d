@@ -40,3 +40,7 @@
 (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescript-tsx-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
 (add-to-list 'auto-mode-alist '("\\.mako?\\'" . web-mode))
+
+(map! :leader
+      :desc "Comment line"
+      "c l" #'comment-line)
