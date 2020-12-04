@@ -52,7 +52,6 @@
 (map! :leader "c E" nil)
 (map! :leader "s s" nil)
 
-
 ;; New Keybindinds
 (map! :leader
       :desc "Comment line"
@@ -73,3 +72,10 @@
 (map! :leader
       :desc "Search symbol"
       "s s" #'imenu-anywhere)
+
+(map! :n "zo" #'origami-open-node
+      :n "zO" #'origami-open-node-recursively
+      :n "zc" #'origami-close-node
+      :n "zC" #'origami-close-node-recursively
+      :n "zt" #'origami-toggle-node
+      :n "zT" #'origami-toggle-all-nodes)
