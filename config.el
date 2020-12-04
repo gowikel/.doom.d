@@ -38,6 +38,8 @@
 ;; This will ask for your password when you try to sign with your GPG key
 (pinentry-start)
 
+(cua-mode t)
+
 (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescript-tsx-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
 (add-to-list 'auto-mode-alist '("\\.mako?\\'" . web-mode))
