@@ -50,3 +50,5 @@
 ;(unpin! t)
 
 (package! pinentry)
+(package! imenu-list)
+(package! imenu-anywhere)

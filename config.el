@@ -44,6 +44,16 @@
 (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
 (add-to-list 'auto-mode-alist '("\\.mako?\\'" . web-mode))
 
+
+;; Unmap unwanted keybindings
+(map! :leader "f s" nil)
+(map! :leader "c d" nil)
+(map! :leader "c D" nil)
+(map! :leader "c E" nil)
+(map! :leader "s s" nil)
+
+
+;; New Keybindinds
 (map! :leader
       :desc "Comment line"
       "c l" #'comment-line)
@@ -57,5 +67,9 @@
       "c d" #'+lookup/definition)
 
 (map! :leader
-      :desc "Goto references"
-      "g r" #'+lookup/references)
+      :desc "Open structure"
+      "o s" #'imenu-list)
+
+(map! :leader
+      :desc "Search symbol"
+      "s s" #'imenu-anywhere)
