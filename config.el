@@ -27,7 +27,7 @@
       projectile-indexing-method 'alien
       confirm-kill-emacs #'y-or-n-p
       epa-pinentry-mode 'loopback
-      doom-font (font-spec :family "Ubuntu Mono" :size 16 :weight 'normal)
+      doom-font (font-spec :family "Ubuntu Mono" :weight 'normal)
       doom-theme 'doom-one
       org-directory "~/org/"
       display-line-numbers t
