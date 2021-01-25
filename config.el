@@ -33,7 +33,8 @@
       display-line-numbers t
       doom-modeline-indent-info t
       js-indent-level 4
-      js-chain-indent nil)
+      js-chain-indent nil
+      display-line-numbers-type 'relative)
 
 ;; On Mac OS you will need to install pinentry-mac
 ;; This will ask for your password when you try to sign with your GPG key
