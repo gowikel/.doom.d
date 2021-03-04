@@ -47,6 +47,10 @@
 (add-to-list 'auto-mode-alist '("\\.mako?\\'" . web-mode))
 
 
+;; Autosave buffers if emacs loses the focus
+(add-function :after after-focus-change-function (lambda () (save-some-buffers t)))
+
+
 ;; Unmap unwanted keybindings
 (map! :leader "f s" nil)
 (map! :leader "c d" nil)
